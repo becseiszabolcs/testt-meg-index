@@ -8,15 +8,23 @@
   </head>
   <body>
     
-      <from id="num" methode="get" action="számolás">
-        <input type="number" name="kg"> kg<br>
-        <input type="number" name="cm"> cm<br>
-        <input type="subimt" value="számolás">
-      </from>
-      <p id="id"></p>
+    <from id="num" methode="get" action="számolás">
+      <input type="number" name="kg" value= 0> kg<br>
+      <input type="number" name="cm" value= 0> cm<br>
+    </from>
+    <p id="id"></p>
+    <button onclick="Myfunction">try</button>
     <script>
-      var x = getElementById("num").
-
+      function Myfunction(){
+      
+      var x = document.getElementById("num");
+      var text = "";
+      var i;
+      for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("id").innerHTML = text;
+    } 
 
 
     </script>
