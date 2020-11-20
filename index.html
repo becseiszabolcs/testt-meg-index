@@ -8,31 +8,17 @@
   </head>
   <body>
     
-     <table>
-       <style>
-       td{
-        border:"2px" solid black;
+      <from id="num" methode="get" action="számolás">
+        <input type="number" name="kg"> kg<br>
+        <input type="number" name="cm"> cm<br>
+        <input type="subimt" value="számolás">
+      </from>
+      <p id="id"></p>
+    <script>
+      var x = getElementById("num").
 
 
 
-      }
-      </style>
-      <tr>
-        <td>testsúly</td>
-        <td><input type="number" id="kg" name="text">kg<td>
-      </tr>
-
-      <tr>
-        <td>magaság</td>
-        <td><input type="number" id="cm" name="text">cm<td>
-      </tr>
-    <script src="script.js">
-      function displayResult() {
-        document.getElementById("kg").innerHTML = "Have a nice day!";
-        }
-
-      
-     </script>
-    </table>
+    </script>
   </body>
 </html>
