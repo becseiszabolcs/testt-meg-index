@@ -7,23 +7,60 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    
-    <from id="num" methode="get" action="számolás">
-      <input type="number" name="kg" value= 0> kg<br>
-      <input type="number" name="cm" value= 0> cm<br>
-    </from>
-    <p id="id"></p>
+    <table>
+    <tr>
+      <td>testtömeg</td>
+      <td><input id="num1" type="number" name="kg" value= 0> kg<br></td>
+    </tr>
+    <tr>
+      <td>magaság</td>
+      <td><input id="num2" type="number" name="cm" value= 0> cm<br></td>
+    </tr>
+    <tr>
+      <td>testtömegindex</td>
+      <td id="ti"></td>
+    </tr>
+    <tr>
+      <td>súlytöblet</td>
+      <td id="ci"></td>
+    </tr>
+    </table>
+    <br>
     <button onclick="Myfunction">try</button>
     <script>
       function Myfunction(){
       
-      var x = document.getElementById("num");
-      var text = "";
-      var i;
-      for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
+      var kg = document.getElementById("num1");
+      var cm = document.getElementById("num2");
+      var text = kg/(m*m);
+      var toblet=kg - 25 * (cm/100)*(cm/100)
+      if 18>text{
+        document.write("<style>")
+        document.write("ti.td{")
+        document.write("bgcolor=\"#FFAA00\"")
+
+        document.write("}")
+        document.write("</style>")
+      } 
+      if 25<text{
+        document.write("<style>")
+        document.write("ti.td{")
+        document.write("bgcolor=\"#FF0000\"")
+
+        document.write("}")
+        document.write("</style>")
+      } 
+      if 18<text<25{
+        document.write("<style>")
+        document.write("ti.td{")
+        document.write("bgcolor=\"#00FF00\"")
+
+        document.write("}")
+        document.write("</style>")
+      } 
       }
-      document.getElementById("id").innerHTML = text;
+      document.getElementById("ti").innerHTML = text;
+      document.getElementById("ci").innerHTML = toblet;
     } 
 
 
